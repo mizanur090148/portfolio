@@ -93,7 +93,7 @@ export const Navbar: React.FC<NavbarProps> = ({ theme, toggleTheme, onOpenTermin
         }}
         className="nav-island"
       >
-        {/* Brand Signature with Glowing Highlights */}
+        {/* Clean Executive Brand Signature */}
         <a
           href="#home"
           onClick={(e) => handleNavClick(e, '#home')}
@@ -104,27 +104,27 @@ export const Navbar: React.FC<NavbarProps> = ({ theme, toggleTheme, onOpenTermin
             textDecoration: 'none',
             color: 'inherit',
             flexShrink: 0,
-            padding: '0.2rem 0.6rem',
+            padding: '0.2rem 0.5rem',
             borderRadius: '9999px',
             transition: 'all 200ms ease',
           }}
         >
-          {/* Glowing Monogram Box */}
+          {/* Luminous Monogram Icon */}
           <div
             style={{
-              width: '2.15rem',
-              height: '2.15rem',
-              borderRadius: '9px',
-              background: 'linear-gradient(135deg, #06b6d4 0%, #3b82f6 50%, #8b5cf6 100%)',
+              width: '2rem',
+              height: '2rem',
+              borderRadius: '8px',
+              background: 'linear-gradient(135deg, #06b6d4 0%, #3b82f6 100%)',
               display: 'flex',
               alignItems: 'center',
               justifyContent: 'center',
               color: '#ffffff',
               fontWeight: 800,
-              fontSize: '0.82rem',
+              fontSize: '0.8rem',
               letterSpacing: '-0.02em',
-              boxShadow: '0 0 20px rgba(6, 182, 212, 0.7), 0 2px 8px rgba(0, 0, 0, 0.5)',
-              border: '1.5px solid rgba(255, 255, 255, 0.4)',
+              boxShadow: '0 0 16px rgba(6, 182, 212, 0.45)',
+              border: '1px solid rgba(255, 255, 255, 0.25)',
               position: 'relative',
             }}
           >
@@ -134,49 +134,27 @@ export const Navbar: React.FC<NavbarProps> = ({ theme, toggleTheme, onOpenTermin
                 position: 'absolute',
                 bottom: '-2px',
                 right: '-2px',
-                width: '8px',
-                height: '8px',
+                width: '7px',
+                height: '7px',
                 borderRadius: '50%',
                 background: '#10b981',
-                boxShadow: '0 0 10px #10b981',
-                border: '1.5px solid #0a0e1a',
+                boxShadow: '0 0 8px #10b981',
+                border: '1px solid #0a0e1a',
               }}
             />
           </div>
 
-          {/* Glowing Highlight Name + Role Micro-Badge */}
-          <div style={{ display: 'flex', alignItems: 'center', gap: '0.55rem' }}>
-            <span
-              style={{
-                fontWeight: 800,
-                fontSize: '1rem',
-                letterSpacing: '-0.02em',
-                background: 'linear-gradient(135deg, #ffffff 40%, #38bdf8 80%, #818cf8 100%)',
-                WebkitBackgroundClip: 'text',
-                WebkitTextFillColor: 'transparent',
-                textShadow: '0 0 24px rgba(56, 189, 248, 0.3)',
-              }}
-            >
-              Mizanur Rahman
-            </span>
-            <span
-              className="brand-role-badge"
-              style={{
-                fontSize: '0.72rem',
-                fontWeight: 700,
-                padding: '0.18rem 0.55rem',
-                borderRadius: '9999px',
-                background: 'rgba(6, 182, 212, 0.15)',
-                border: '1px solid rgba(6, 182, 212, 0.4)',
-                color: 'var(--cyan-400)',
-                letterSpacing: '0.02em',
-                whiteSpace: 'nowrap',
-                boxShadow: '0 0 12px rgba(6, 182, 212, 0.25)',
-              }}
-            >
-              Senior Full Stack
-            </span>
-          </div>
+          {/* Clean Name Typography */}
+          <span
+            style={{
+              fontWeight: 700,
+              fontSize: '0.98rem',
+              letterSpacing: '-0.02em',
+              color: '#f8fafc',
+            }}
+          >
+            Mizanur Rahman
+          </span>
         </a>
 
         {/* Desktop Centered Link Capsule */}
@@ -419,11 +397,6 @@ export const Navbar: React.FC<NavbarProps> = ({ theme, toggleTheme, onOpenTermin
 
       {/* Responsive Breakpoints CSS */}
       <style>{`
-        @media (max-width: 540px) {
-          .brand-role-badge {
-            display: none !important;
-          }
-        }
         @media (min-width: 860px) {
           .desktop-links-capsule {
             display: flex !important;
