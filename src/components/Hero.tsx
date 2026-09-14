@@ -64,104 +64,119 @@ export const Hero: React.FC<HeroProps> = ({ onOpenTerminal }) => {
               <div
                 className="badge-pill"
                 style={{
-                  padding: '0.45rem 1.15rem',
-                  fontSize: '0.85rem',
+                  padding: '0.4rem 1rem',
+                  fontSize: '0.82rem',
                   color: '#34d399',
-                  borderColor: 'rgba(16, 185, 129, 0.45)',
-                  background: 'rgba(16, 185, 129, 0.1)',
-                  boxShadow: '0 0 20px rgba(16, 185, 129, 0.25)',
+                  borderColor: 'rgba(16, 185, 129, 0.3)',
+                  background: 'rgba(16, 185, 129, 0.08)',
                 }}
               >
                 <span className="badge-pulse" />
-                <span style={{ fontWeight: 700 }}>Open to Senior Full Stack, Senior Software Engineer & Tech Lead Roles</span>
+                <span style={{ fontWeight: 600 }}>Available for Senior Engineering Roles &bull; Immediate Join</span>
               </div>
             </div>
 
             {/* Main Headline */}
             <div>
+              <div
+                style={{
+                  fontSize: '1.2rem',
+                  fontWeight: 600,
+                  color: 'var(--text-secondary)',
+                  marginBottom: '0.35rem',
+                  letterSpacing: '-0.01em',
+                }}
+              >
+                Hi, I'm
+              </div>
               <h1
                 style={{
-                  fontSize: 'clamp(2.5rem, 5vw, 4rem)',
+                  fontSize: 'clamp(2.6rem, 5.2vw, 4.2rem)',
                   fontWeight: 900,
-                  lineHeight: 1.12,
-                  marginBottom: '0.85rem',
-                  letterSpacing: '-0.025em',
+                  lineHeight: 1.08,
+                  marginBottom: '0.9rem',
+                  letterSpacing: '-0.03em',
+                  color: '#ffffff',
                 }}
               >
-                Hi, I'm{' '}
-                <span
-                  style={{
-                    background: 'linear-gradient(135deg, #ffffff 10%, #38bdf8 55%, #818cf8 90%)',
-                    WebkitBackgroundClip: 'text',
-                    WebkitTextFillColor: 'transparent',
-                    filter: 'drop-shadow(0 0 35px rgba(56, 189, 248, 0.4))',
-                  }}
-                >
-                  {PERSONAL_INFO.name}
-                </span>
+                {PERSONAL_INFO.name}
               </h1>
+
+              {/* Primary Role */}
               <h2
                 style={{
-                  fontSize: 'clamp(1.25rem, 2.4vw, 1.85rem)',
+                  fontSize: 'clamp(1.35rem, 2.5vw, 2rem)',
                   fontWeight: 800,
                   color: '#38bdf8',
-                  lineHeight: 1.3,
-                  letterSpacing: '-0.015em',
-                  textShadow: '0 0 24px rgba(56, 189, 248, 0.4)',
+                  lineHeight: 1.25,
+                  letterSpacing: '-0.02em',
+                  marginBottom: '1rem',
                 }}
               >
-                Senior Full Stack Software Engineer &bull; Senior Software Engineer
+                Senior Full Stack Software Engineer
               </h2>
+
+              {/* Roles & Enterprise Credentials Strip */}
               <div
                 style={{
                   display: 'flex',
                   flexWrap: 'wrap',
-                  gap: '0.5rem',
+                  gap: '0.45rem',
                   alignItems: 'center',
-                  marginTop: '0.75rem',
                 }}
               >
                 <span
                   style={{
-                    fontSize: '0.8rem',
+                    fontSize: '0.82rem',
                     fontFamily: 'var(--font-mono)',
-                    fontWeight: 700,
-                    padding: '0.25rem 0.75rem',
-                    borderRadius: 'var(--radius-full)',
-                    background: 'rgba(6, 182, 212, 0.14)',
-                    border: '1px solid rgba(6, 182, 212, 0.4)',
-                    color: '#38bdf8',
-                    boxShadow: '0 0 14px rgba(6, 182, 212, 0.25)',
+                    fontWeight: 600,
+                    padding: '0.28rem 0.8rem',
+                    borderRadius: '9999px',
+                    background: 'rgba(255, 255, 255, 0.05)',
+                    border: '1px solid rgba(255, 255, 255, 0.12)',
+                    color: '#f8fafc',
+                  }}
+                >
+                  Senior Software Engineer
+                </span>
+                <span
+                  style={{
+                    fontSize: '0.82rem',
+                    fontFamily: 'var(--font-mono)',
+                    fontWeight: 600,
+                    padding: '0.28rem 0.8rem',
+                    borderRadius: '9999px',
+                    background: 'rgba(255, 255, 255, 0.05)',
+                    border: '1px solid rgba(255, 255, 255, 0.12)',
+                    color: '#94a3b8',
                   }}
                 >
                   Software Engineer
                 </span>
                 <span
                   style={{
-                    fontSize: '0.8rem',
+                    fontSize: '0.82rem',
                     fontFamily: 'var(--font-mono)',
-                    fontWeight: 700,
-                    padding: '0.25rem 0.75rem',
-                    borderRadius: 'var(--radius-full)',
-                    background: 'rgba(139, 92, 246, 0.14)',
-                    border: '1px solid rgba(139, 92, 246, 0.4)',
-                    color: '#c084fc',
-                    boxShadow: '0 0 14px rgba(139, 92, 246, 0.25)',
+                    fontWeight: 600,
+                    padding: '0.28rem 0.8rem',
+                    borderRadius: '9999px',
+                    background: 'rgba(6, 182, 212, 0.08)',
+                    border: '1px solid rgba(6, 182, 212, 0.28)',
+                    color: '#38bdf8',
                   }}
                 >
                   Optionally Tech Lead
                 </span>
                 <span
                   style={{
-                    fontSize: '0.8rem',
+                    fontSize: '0.82rem',
                     fontFamily: 'var(--font-mono)',
                     fontWeight: 700,
-                    padding: '0.25rem 0.75rem',
-                    borderRadius: 'var(--radius-full)',
-                    background: 'rgba(16, 185, 129, 0.14)',
-                    border: '1px solid rgba(16, 185, 129, 0.4)',
+                    padding: '0.28rem 0.8rem',
+                    borderRadius: '9999px',
+                    background: 'rgba(16, 185, 129, 0.08)',
+                    border: '1px solid rgba(16, 185, 129, 0.28)',
                     color: '#34d399',
-                    boxShadow: '0 0 14px rgba(16, 185, 129, 0.25)',
                   }}
                 >
                   12+ Years Enterprise Experience
@@ -299,11 +314,11 @@ export const Hero: React.FC<HeroProps> = ({ onOpenTerminal }) => {
             <div
               style={{
                 position: 'absolute',
-                width: '420px',
-                height: '420px',
+                width: '380px',
+                height: '380px',
                 borderRadius: '50%',
-                background: 'radial-gradient(circle, rgba(6, 182, 212, 0.35) 0%, rgba(139, 92, 246, 0.22) 50%, transparent 75%)',
-                filter: 'blur(55px)',
+                background: 'radial-gradient(circle, rgba(6, 182, 212, 0.2) 0%, rgba(59, 130, 246, 0.1) 50%, transparent 75%)',
+                filter: 'blur(50px)',
                 zIndex: 0,
               }}
             />
